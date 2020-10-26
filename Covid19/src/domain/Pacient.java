@@ -1,9 +1,12 @@
 package domain;
 
+import java.util.LinkedList;
+
 public class Pacient {
 
 	String name;
 	int years;
+	//LinkedList<Symptom> symptoms= new LinkedList<Symptom>();
 	
 	public Pacient(String name, int years) {
 		super();
@@ -23,4 +26,5 @@ public class Pacient {
 	public void setYears(int years) {
 		this.years = years;
 	}
+	
 }
