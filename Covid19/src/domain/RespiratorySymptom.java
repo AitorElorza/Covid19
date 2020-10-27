@@ -1,6 +1,6 @@
 package domain;
 
-public class RespiratorySymptom {
+public class RespiratorySymptom implements Symptom{
 	int covidImpact;
 	int severityIndex;
 	

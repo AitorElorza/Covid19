@@ -18,7 +18,11 @@ public class Probatu {
 		gaixoa.addSymptom((Symptom) rs, 3);
 		gaixoa.addSymptom((Symptom) nms, 1);
 		
+	 
+		double impact =gaixoa.calcCovid19Impact();
+		System.out.println(impact);
 		
 	}
+	
 
 }

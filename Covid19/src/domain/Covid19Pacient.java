@@ -38,7 +38,7 @@ public class Covid19Pacient extends Pacient{
 		respirs.put(r,w);
 	}
 	*/
-	double calcCovid19Impact() {
+	public double calcCovid19Impact() {
 		double afection=0;
 		double increment=0;
 		double impact;
