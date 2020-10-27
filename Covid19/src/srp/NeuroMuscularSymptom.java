@@ -1,8 +1,9 @@
-package domain;
+package srp;
 
 public class NeuroMuscularSymptom implements Symptom{
-	int covidImpact;
-	int severityIndex;
+	private int covidImpact;
+	private int severityIndex;
+	private int affectedDays;
 	
 	
 	
@@ -25,5 +26,15 @@ public class NeuroMuscularSymptom implements Symptom{
 	}
 	public void setSeverityIndex(int severityIndex) {
 		this.severityIndex = severityIndex;
+	}
+	
+	public int getAffectedDays() {
+		
+		return affectedDays;
+	}
+	
+	public void setAfecctedDays(int days) {
+		affectedDays=days;
+		
 	}
 }

@@ -1,9 +1,4 @@
-import domain.CardioVascularSymptom;
-import domain.Covid19Pacient;
-import domain.NeuroMuscularSymptom;
-import domain.RespiratorySymptom;
-import domain.Symptom;
-
+package srp;
 public class Probatu {
 
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package domain;
+package ocp;
 
 
 import java.util.HashMap;
@@ -59,6 +59,16 @@ public class Covid19Pacient extends Pacient{
 		//calculate impact
 		impact=afection+increment;
 		return impact;
+	}
+	
+	public int sanatedDays() {
+		int days=0;
+		for (Symptom c:symptoms.keySet()) {
+			if(days<c.getAffectedDays()) {
+				days=c.getAffectedDays();
+			}
+		}
+		return days;
 	}
 
 

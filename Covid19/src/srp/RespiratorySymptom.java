@@ -1,9 +1,9 @@
-package domain;
+package srp;
 
 public class RespiratorySymptom implements Symptom{
-	int covidImpact;
-	int severityIndex;
-	
+	private int covidImpact;
+	private int severityIndex;
+	private int affectedDays;
 	
 	public RespiratorySymptom(int covidImpact, int severityIndex) {
 		super();
@@ -22,6 +22,15 @@ public class RespiratorySymptom implements Symptom{
 	}
 	public void setSeverityIndex(int severityIndex) {
 		this.severityIndex = severityIndex;
+	}
+
+	public int getAffectedDays() {
+		return affectedDays;
+	}
+
+	public void setAfecctedDays(int days) {
+		affectedDays=days;
+		
 	}
 	
 }
