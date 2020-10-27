@@ -12,7 +12,8 @@ public class Covid19Pacient extends Pacient{
 	}
 	
 	Map<Symptom,Integer> symptoms =new HashMap<Symptom,Integer>();
-	
+	 AfectionCalculator acalc= new AfectionCalculator();
+	 IncrementCalculator icalc = new IncrementCalculator(); 
 	
 	
 	
@@ -39,23 +40,17 @@ public class Covid19Pacient extends Pacient{
 	}
 	*/
 	public double calcCovid19Impact() {
-		double afection=0;
-		double increment=0;
+		double afection= acalc.afectionCalculator(symptoms);
+		double increment=icalc.incrementCalculator(afection, this.getYears());
 		double impact;
 		//calculate afection
-		for (Symptom c:symptoms.keySet())
+		/*for (Symptom c:symptoms.keySet())
 			afection=afection+c.getSeverityIndex()*symptoms.get(c);
-		/*
-		for (CardioVascularSymptom c:cardios.keySet())
-			afection=afection+c.getSeverityIndex()*cardios.get(c);
-		for (NeuroMuscularSymptom c:neuros.keySet())
-			afection=afection+c.getSeverityIndex()*cardios.get(c);
-		for (RespiratorySymptom c:respirs.keySet())
-			afection=afection+c.getSeverityIndex()*cardios.get(c);
-		afection=afection/(cardios.size()+neuros.size()+respirs.size());
-		old code*/
+		
 		//calculate increment
 		if (getYears()>65) increment=afection*0.5;
+		*/
+		
 		//calculate impact
 		impact=afection+increment;
 		return impact;

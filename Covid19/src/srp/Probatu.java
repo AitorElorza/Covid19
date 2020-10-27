@@ -1,7 +1,7 @@
 package srp;
 public class Probatu {
 
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		// TODO Auto-generated method stub
 		Covid19Pacient gaixoa = new Covid19Pacient("Xabier",21);
 		CardioVascularSymptom cvs= new CardioVascularSymptom(1,2);
