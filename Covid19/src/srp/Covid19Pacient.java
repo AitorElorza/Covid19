@@ -26,6 +26,7 @@ public class Covid19Pacient extends Pacient{
 	public void addSymptom(Symptom c, Integer w) {
 		symptoms.put(c,w);
 	}
+	
 
 	
 	/*	
