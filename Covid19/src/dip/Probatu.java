@@ -1,4 +1,6 @@
 package dip;
+
+
 public class Probatu {
 
 	public void main(String[] args) {
@@ -17,13 +19,16 @@ public class Probatu {
 		nms.setCovidImpact(2);
 		nms.setSeverityIndex(3);
 		
+		AbstractIncrementCalculator aic= new IncrementCalculator();
+		AbstractAfectionCalculator aac =new AfectionCalculator();
 		
-		gaixoa.addSymptom((Symptom) cvs, 2);
-		gaixoa.addSymptom((Symptom) rs, 3);
-		gaixoa.addSymptom((Symptom) nms, 1);
+		
+		gaixoa.addSymptom(cvs, 2);
+		gaixoa.addSymptom(rs, 3);
+		gaixoa.addSymptom(nms, 1);
 		
 	 
-		double impact =gaixoa.calcCovid19Impact();
+		double impact =gaixoa.calcCovid19Impact(aac,aic);
 		System.out.println(impact);
 		
 	}

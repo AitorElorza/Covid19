@@ -1,6 +1,6 @@
 package dip;
 
-public class IncrementCalculator {
+public class IncrementCalculator extends  AbstractIncrementCalculator {
 	
 	public double incrementCalculator(double afection,int age) {
 		double increment=0;

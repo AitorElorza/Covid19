@@ -2,7 +2,7 @@ package dip;
 
 import java.util.Map;
 
-public class AfectionCalculator {
+public class AfectionCalculator extends AbstractAfectionCalculator {
 
 	
 	public double afectionCalculator(Map<Symptom,Integer> symptoms) {
