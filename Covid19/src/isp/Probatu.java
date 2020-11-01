@@ -19,7 +19,7 @@ public class Probatu {
 		nms.setCovidImpact(2);
 		nms.setSeverityIndex(3);
 		
-		AbstractIncrementCalculator aic= new IncrementCalculator();
+		//AbstractIncrementCalculator aic= new IncrementCalculator();
 		AbstractAfectionCalculator aac =new AfectionCalculator();
 		
 		
@@ -28,7 +28,7 @@ public class Probatu {
 		gaixoa.addSymptom(nms, 1);
 		
 	 
-		double impact =gaixoa.calcCovid19Impact(aac,aic);
+		double impact =gaixoa.calcCovid19Impact(aac);
 		System.out.println(impact);
 		
 	}

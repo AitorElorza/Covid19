@@ -4,7 +4,7 @@ package isp;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Covid19Pacient extends Pacient{
+public class Covid19Pacient extends Pacient {
 
 	public Covid19Pacient(String name, int years) {
 		super(name, years);

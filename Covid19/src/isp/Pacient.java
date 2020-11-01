@@ -2,7 +2,7 @@ package isp;
 
 import java.util.LinkedList;
 
-public class Pacient {
+public class Pacient implements InterfacegetYears {
 
 	String name;
 	int years;
@@ -26,5 +26,6 @@ public class Pacient {
 	public void setYears(int years) {
 		this.years = years;
 	}
+
 	
 }
