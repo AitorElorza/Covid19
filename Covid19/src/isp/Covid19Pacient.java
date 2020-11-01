@@ -12,6 +12,7 @@ public class Covid19Pacient extends Pacient{
 	}
 
 	Map<Symptom,Integer> symptoms =new HashMap<Symptom,Integer>();
+	CalcIncrement ci;
 	
 
 
@@ -32,9 +33,9 @@ public class Covid19Pacient extends Pacient{
 
 
 
-	public double calcCovid19Impact( AbstractAfectionCalculator aac, AbstractIncrementCalculator aic) {
+	public double calcCovid19Impact( AbstractAfectionCalculator aac) {
 		double afection= aac.afectionCalculator(symptoms);
-		double increment=aic.incrementCalculator(afection, this.getYears());
+		double increment=ci.getIncrementedByYear(this, (int) afection);
 		double impact;
 
 
