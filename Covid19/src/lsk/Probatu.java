@@ -8,11 +8,11 @@ public class Probatu {
 		cvs.setName("Cardio Vascular");
 		cvs.setSeverityIndex(1);
 		cvs.setCovidImpact(2);
-		Symptom rs=new Symptom();
+		Symptom rs=new CurableSymptom();
 		rs.setName("Respiratory Symptom");
 		rs.setCovidImpact(2);
 		rs.setSeverityIndex(2);
-		Symptom nms= new Symptom();
+		Symptom nms= new CurableSymptom();
 		nms.setName("Neuro Muscular");
 		nms.setCovidImpact(2);
 		nms.setSeverityIndex(3);
@@ -25,6 +25,11 @@ public class Probatu {
 	 
 		double impact =gaixoa.calcCovid19Impact();
 		System.out.println(impact);
+
+		
+		gaixoa.cure();
+		 
+		
 		
 	}
 	

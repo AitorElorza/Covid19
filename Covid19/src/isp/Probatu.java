@@ -5,7 +5,13 @@ public class Probatu {
 
 	public void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		CalcIncrement ci = new CalcIncrement();
+		
 		Covid19Pacient gaixoa = new Covid19Pacient("Xabier",21);
+		Pertsona gaixoa2 = new Pertsona();
+		gaixoa2.setName("Xabier");
+		gaixoa2.setAdina("70");
 		Symptom cvs= new Symptom();
 		cvs.setName("Cardio Vascular");
 		cvs.setSeverityIndex(1);
@@ -28,8 +34,11 @@ public class Probatu {
 		gaixoa.addSymptom(nms, 1);
 		
 	 
-		double impact =gaixoa.calcCovid19Impact(aac);
-		System.out.println(impact);
+		//double impact =gaixoa.calcCovid19Impact(aac);
+		
+		double impact2 = ci.getIncrementedByYear(gaixoa2, 40);
+		System.out.println(impact2);
+		//System.out.println(impact);
 		
 	}
 	
